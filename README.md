@@ -1,9 +1,9 @@
-# WeCenter_UC
  WeCenter UCenter 用户对接组件
  ===========
  
- 版本需求: WeCenter 3.x
+ 版本需求
  ===========
+ WeCenter 3.x
 
  安装方法
  =========== 
