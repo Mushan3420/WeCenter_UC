@@ -21,7 +21,7 @@
 ```
 <?php	// 	别忘记这行
 
-define('UC_CONNECT', '');	// 去掉这行的值
+define('UC_CONNECT', '');	~~// 去掉这行的值~~
 define('UC_DBHOST', 'localhost');
 define('UC_DBUSER', 'ucenter');
 define('UC_DBPW', '!!!');
