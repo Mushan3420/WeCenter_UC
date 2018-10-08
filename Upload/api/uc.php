@@ -13,7 +13,7 @@
 */
 
 define('UC_CLIENT_VERSION', '1.6.0');
-define('UC_CLIENT_RELEASE', '20110501');
+define('UC_CLIENT_RELEASE', '20170101');
 
 define('API_DELETEUSER', 0);
 define('API_RENAMEUSER', 0);
@@ -65,7 +65,7 @@ if (!defined('IN_UC')) {
 	
 	if(in_array($get['action'], array('test', 'updatebadwords', 'updatehosts', 'updateapps', 'updateclient', 'synlogin', 'synlogout'))) {
 		$uc_note = new uc_note();
-		exit($uc_note->$get['action']($get, $post));
+		exit(call_user_func(array($uc_note, $get['action']), $get, $post));
 	} else {
 		exit(API_RETURN_FAILED);
 	}
@@ -83,7 +83,7 @@ class uc_note {
 		return uc_serialize($arr, $htmlon);
 	}
 
-	function uc_note() {
+	function _construct() {
 		require_once (AWS_PATH . '/config/database.php');
 
 		$this->tablepre = $config['prefix'];

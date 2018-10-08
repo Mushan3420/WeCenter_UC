@@ -1,8 +1,8 @@
 # WeCenter_UC
- Anwsion UCenter 用户对接组件
+ WeCenter UCenter 用户对接组件
  ===========
  
- 版本需求: Anwsion 1.0 或更高版本
+ 版本需求: WeCenter 3.x
  ===========
 
  安装方法
@@ -16,7 +16,7 @@
 
  其他的按照说明填写标签无需填写
 
- 3. 添加完成后点击编辑应用, 将最下面的 应用的 UCenter 配置信息: 里的内容建立成一个 PHP 文件保存为 config.inc.php 到 uc_client/ 目录下面, 权限设置为 777, 保存为 GBK 编码 (重要!) 内容大致如下:
+ 3. 添加完成后点击编辑应用, 将最下面的 应用的 UCenter 配置信息: 里的内容建立成一个 PHP 文件保存为 config.inc.php 到 uc_client/ 目录下面, 权限设置为 777, 保存为 UTF-8 编码 (重要!) 内容大致如下:
  
 <?php	// 	别忘记这行
 
@@ -41,10 +41,10 @@ define('UC_PPP', '20');
  附加工具
  ===========
  
- Tools 下的 uc_import.php 可以将 Anwsion 的用户数据导入 UCenter
+ Tools 下的 uc_import.php 可以将 WeCenter 的用户数据导入 UCenter
  
  常见问题
  ===========
  
- 1. Anwsion 登录后 Discuz 不同步登录
- 	该用户是 Anwsion 用户, 没有在 Discuz 登录过会有此问题
+ 1. WeCenter 登录后 Discuz 不同步登录
+ 	该用户是 WeCenter 用户, 没有在 Discuz 登录过会有此问题
