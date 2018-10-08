@@ -11,7 +11,9 @@
  2. 进入 UCenter 后台, 添加应用
 
  应用类型: 其他
+ 
  是否开启同步登录: 是
+ 
  是否接受通知: 否
 
  其他的按照说明填写标签无需填写
@@ -21,7 +23,7 @@
 ```
 <?php	// 	别忘记这行
 
-define('UC_CONNECT', 'mysql');	~~// 去掉这行的值~~
+define('UC_CONNECT', 'mysql');	
 define('UC_DBHOST', 'localhost');
 define('UC_DBUSER', 'ucenter');
 define('UC_DBPW', '!!!');
