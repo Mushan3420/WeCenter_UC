@@ -18,6 +18,7 @@
 
  3. 添加完成后点击编辑应用, 将最下面的 应用的 UCenter 配置信息: 里的内容建立成一个 PHP 文件保存为 config.inc.php 到 uc_client/ 目录下面, 权限设置为 777, 保存为 UTF-8 编码 (重要!) 内容大致如下:
  
+```
 <?php	// 	别忘记这行
 
 define('UC_CONNECT', '');	// 去掉这行的值
@@ -34,7 +35,7 @@ define('UC_CHARSET', 'utf-8');
 define('UC_IP', '');
 define('UC_APPID', '2');
 define('UC_PPP', '20');
-
+```
 
  4. 刷新 UCenter 后台管理, 显示通信成功即安装完成, 去后台开启 Ucenter 用户对接选项就可以使用了
  
