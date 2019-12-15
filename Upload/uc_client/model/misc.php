@@ -127,9 +127,9 @@ class miscmodel {
 		}
 
 		if(function_exists('fsockopen')) {
-			$fp = @fsockopen(($scheme == 'https' ? 'ssl' : ://' : '').($scheme == 'https' ? $host : ($ip ? $ip : $host)), $port, $errno, $errstr, $timeout);
+			$fp = @fsockopen(($scheme == 'https' ? 'ssl://' : '').($scheme == 'https' ? $host : ($ip ? $ip : $host)), $port, $errno, $errstr, $timeout);
 		} elseif (function_exists('pfsockopen')) {
-			$fp = @pfsockopen(($scheme == 'https' ? 'ssl' : ://' : '').($scheme == 'https' ? $host : ($ip ? $ip : $host)), $port, $errno, $errstr, $timeout);
+			$fp = @pfsockopen(($scheme == 'https' ? 'ssl://' : '').($scheme == 'https' ? $host : ($ip ? $ip : $host)), $port, $errno, $errstr, $timeout);
 		} else {
 			$fp = false;
 		}
